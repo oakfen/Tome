@@ -7,6 +7,13 @@ Tome.UI = {}
 Tome.Events = {}
 
 -------\\ Upon Startup //-----
+function Tome:TRPCheck()
+    if TRP3_API and TRP3_API.register and TRP3_API.register.isunitRPNmae then
+        Tome.trpOn = true
+    else
+        Tome.trpOn = false
+    end
+
 function Tome:OnInitialize()
     -- DB setup
     Tome.db = LibStub("AceDB-3.0"):New("TomeDB", defaults, true)

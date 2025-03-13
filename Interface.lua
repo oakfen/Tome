@@ -1,3 +1,4 @@
+
 local Tome = MyChatLogger
 local AceGUI = LibStub("AceGUI-3.0")
 
@@ -8,8 +9,8 @@ local logFrame = nil -- Will hold our chat log window
 local scrollBox = nil -- Will store messages
 local isFrameShown = false -- Track visibility
 
-
 -------\\ Creating frame //-----
+
 function Tome.UI:CreateChatLogFrame()
     if logFrame then return end -- Prevent multiple instances
 
