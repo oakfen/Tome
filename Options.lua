@@ -1,3 +1,12 @@
+local Tome = MyChatLogger
+local AC = LibStub("AceConfig-3.0")
+local ACD = LibStub("AceConfigDialog-3.0")
+local defaults = {
+    profile = {
+        setting = true,
+    }
+}
+
 local options = {
     name = "Tome",
     handler = Tome,
